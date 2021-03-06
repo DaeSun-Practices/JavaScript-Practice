@@ -1,3 +1,5 @@
+'use strict';
+
 // Callback Hell example
 class UserStorage {
   loginUser(id, password) {
