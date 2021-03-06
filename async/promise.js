@@ -11,6 +11,7 @@
 // 1. Producer
 console.log("1. Producer")
 // when new Promise is created, the executor runs automatically.
+// Promise는 생성과 동시에 실행된다는 것을 항상 기억하라!
 //                           잘되었을 떄, 잘 안되었을 때
 const promise = new Promise((resolve, reject) => {
   // doing some heavy work (network, read files)

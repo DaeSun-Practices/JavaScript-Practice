@@ -29,8 +29,8 @@ class UserStorage {
 
   // Homework Answer 🚀
   async getUserWithRole(user, password) {
-    user = await this.loginUser(user, password);
-    const role = await this.getRoles(user);
+    const usr = await this.loginUser(user, password);
+    const role = await this.getRoles(usr);
     return role;
   }
 }
@@ -47,6 +47,6 @@ userStorage
 
 // Homework Answer 🚀
 userStorage
-  .getUserWithRole() //
+  .getUserWithRole()
   .catch(console.log)
   .then(console.log);
